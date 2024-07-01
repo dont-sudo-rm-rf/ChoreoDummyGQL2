@@ -9,7 +9,7 @@ type Query {
     getClassByNameJSON(name: String!): JSON
 }
 """
-with open("/output.json", 'r') as f:
+with open("./output.json", 'r') as f:
     data = json.load(f)
 
 query = QueryType()
